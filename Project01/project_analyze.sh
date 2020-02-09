@@ -9,7 +9,7 @@ find .. -name "*.$ext" | wc -l
 echo "provide tag"
 read tag
 
-find -name "Tag.log" | rm
+rm -f Tag.log
 
 find .. -name "*.py" -print0 | while IFS= read -d '' file
 do 
