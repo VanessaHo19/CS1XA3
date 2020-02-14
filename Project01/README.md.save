@@ -1,0 +1,28 @@
+# CS 1XA3 Project01 README - hov19
+## Usage
+Execute this script from the project root with:
+	chmod +x CS1XA3/Project01/project_analyze.sh
+	./CS1XA3/Project01/project_analyze F1 F2 F3 F4
+With possible arguments
+	F1: Feature 01 
+	F2: Feature 02 
+	F3: Feature 03 Asks user to input extension, and outputs number of files in the repo with that extensio
+	F4: Feature 04 Asks user to input tag, finds lines in any *.py file in the repo that includes the tag and begin with "#", and concatenates the line into a new file  
+## Feature 01 (6.1 Script Input)
+Description: this feature asks the user to input any integer, and the script will output the same integer
+Execution: execute this feature by
+Reference: some code was taken from [[https://someurl.com]]
+## Feature 02 (6.2 FIXME Log)
+Description: this feature finds every file in the repo where the file name ends with '#FIXME', and will concatenate that file name into a new file named fixme.log
+Execution: execute this feature by ...
+Reference: some code was taken from [[https://someurl.com]]
+## Feature 03 (6.5 File Type Count)
+Description: this feature asks the user to input a file extension, then looks through all the files in the repo containing that extension, and outputs the number of files in the repo that contain that extension
+Execution: execute this feature by ...
+Reference: some code was taken from [[https://someurl.com]]
+## Feature 04 (6.6 Find Tag)
+Description: this feature does ....
+Execution: execute this feature by ...
+Reference: some code was taken from [[https://someurl.com]]
+## Custom Feature SomeFeature 
+...
