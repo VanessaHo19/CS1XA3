@@ -34,8 +34,8 @@ F5() {
 	git log -i --grep=merge --oneline | cut -d' ' -f 1 | head -n 1 | xargs git checkout
 }
 #Feature 6 File Size List (6.4)
-#F6() {
-#}
+F6() {
+}
 #Feature 7 Backup and Delete / Restore (6.8)
 #F7() {
 #}
