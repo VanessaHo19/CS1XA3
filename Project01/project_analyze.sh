@@ -31,7 +31,7 @@ F4() {
 }
 #Feature 5 Checkout Latest Merge (6.3)
 F5() {
-	git log --grep=merge
+	git log -i --grep=merge --oneline
 }
 #Feature 6 File Size List (6.4)
 #F6() {
