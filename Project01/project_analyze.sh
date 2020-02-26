@@ -29,6 +29,22 @@ F4() {
 		cat $file | grep '^#' | grep $tag >> Tag.log
 	done 
 }
+#Feature 5 Checkout Latest Merge (6.3)
+F5() {
+	git log --grep=merge
+}
+#Feature 6 File Size List (6.4)
+#F6() {
+#}
+#Feature 7 Backup and Delete / Restore (6.8)
+#F7() {
+#}
+#Feature 8 Custom Feature 1
+#F8() {
+#}
+#Feature 9 Custom Feature 2
+#F9() {
+#}
 
 for arg in "$@"
 do 
@@ -40,4 +56,10 @@ if [ "$#" -eq 0 ] ; then
 	F2
 	F3
 	F4
+	F5
+#	F6
+#	F7
+#	F8
+#	F9
 fi
+
