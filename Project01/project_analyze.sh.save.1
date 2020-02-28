@@ -38,7 +38,7 @@ F6() {
 	echo "Backup or Restore"
 	read input
 
-	if [ $input == "Backup" ] ; then
+	if [ $input="Backup" ] ; then
 		if [[ -d ./backup ]] ; then
 			cd backup
 			rm *
@@ -52,35 +52,19 @@ F6() {
                 	cp $file ./backup
 			rm $file
         	done
-	elif [ $input == "Restore" ] ; then
-		for line in $(cat backup/restore.log);
+	elif [ $input="Restore" ] ; then
+		for line in $(cat restore.log);
 		do
-			filename=${line##*/}
-			newpath=`echo $line | xargs dirname`
-			if [ -f $filename ] ; then
-				mv "backup/$filename" $newpath
-			else
-				echo "ERROR: file does not exist"
-			fi
+			filename=echo ${$line##*/}
+			filepath=$(echo $line | cut )
 		done
 	fi
 }
-#Feature 7
+#Feature 7 
 #F7() {
 #}
 #Feature 8 Custom Feature 1
 #F8() {
-#	echo "input word to be repeated"
-#	read repeatedWord
-#	echo "input second word"
-#	read wordLen
-#	firstchar=1
-#	lastchar=${#wordLen}
-#	for ((num=$firstchar; num<=$lastchar));
-#	do
-#		echo $repeatedWord>>Repeated.log
-#		num+=1
-#	done
 #}
 #Feature 9 Custom Feature 2
 #F9() {

@@ -38,7 +38,7 @@ F6() {
 	echo "Backup or Restore"
 	read input
 
-	if [ $input == "Backup" ] ; then
+	if [ $input="Backup" ] ; then
 		if [[ -d ./backup ]] ; then
 			cd backup
 			rm *
@@ -46,41 +46,18 @@ F6() {
 		else
 			mkdir backup
 		fi
-		find .. -name "*.tmp" > backup/restore.log
-		find .. -name "*.tmp" -print0 | while IFS= read -d '' file
-        	do
-                	cp $file ./backup
-			rm $file
-        	done
-	elif [ $input == "Restore" ] ; then
-		for line in $(cat backup/restore.log);
+		find .. -name "*.tmp" -printf "%f\n" > restoresafasd.log
+		find .. -name "*.tmp" print0 | while IFS= read -d '' file
 		do
-			filename=${line##*/}
-			newpath=`echo $line | xargs dirname`
-			if [ -f $filename ] ; then
-				mv "backup/$filename" $newpath
-			else
-				echo "ERROR: file does not exist"
-			fi
-		done
+                	echo $file
+        	done
 	fi
 }
-#Feature 7
+#Feature 7 
 #F7() {
 #}
 #Feature 8 Custom Feature 1
 #F8() {
-#	echo "input word to be repeated"
-#	read repeatedWord
-#	echo "input second word"
-#	read wordLen
-#	firstchar=1
-#	lastchar=${#wordLen}
-#	for ((num=$firstchar; num<=$lastchar));
-#	do
-#		echo $repeatedWord>>Repeated.log
-#		num+=1
-#	done
 #}
 #Feature 9 Custom Feature 2
 #F9() {
