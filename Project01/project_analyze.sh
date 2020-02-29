@@ -57,7 +57,7 @@ F6() {
 		do
 			filename=${line##*/}
 			newpath=`echo $line | xargs dirname`
-			if [ -f $filename ] ; then
+			if [ -f "backup/$filename" ] ; then
 				mv "backup/$filename" $newpath
 			else
 				echo "ERROR: file does not exist"
@@ -65,26 +65,38 @@ F6() {
 		done
 	fi
 }
-#Feature 7
-#F7() {
-#}
+#Feature 7 File Size List (6.4)
+F7() {
+	ls -Slh -p | grep -v /
+}
 #Feature 8 Custom Feature 1
-#F8() {
-#	echo "input word to be repeated"
-#	read repeatedWord
-#	echo "input second word"
-#	read wordLen
-#	firstchar=1
-#	lastchar=${#wordLen}
-#	for ((num=$firstchar; num<=$lastchar));
-#	do
-#		echo $repeatedWord>>Repeated.log
-#		num+=1
-#	done
-#}
+F8() {
+	echo "input word to be repeated"
+	read repeatedWord
+	echo "input second word"
+	read wordLen
+
+	rm -f Repeated.log
+
+	lastchar=${#wordLen}
+	for ((char=1; char<=${#wordLen}; char++));
+	do
+		echo $repeatedWord >> Repeated.log
+	done
+}
 #Feature 9 Custom Feature 2
-#F9() {
-#}
+F9() {
+	echo "Please input INTEGER"
+	read integer
+
+	rm -f even.log odd.log
+
+	if (( $integer % 2 )) ; then
+		echo $integer >> odd.log
+	else
+		echo $integer >> even.log
+	fi
+}
 
 for arg in "$@"
 do 
@@ -98,8 +110,8 @@ if [ "$#" -eq 0 ] ; then
 	F4
 	F5
 	F6
-#	F7
-#	F8
-#	F9
+	F7
+	F8
+	F9
 fi
 
