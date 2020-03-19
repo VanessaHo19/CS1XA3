@@ -1,0 +1,11 @@
+# CS 1XA3 Project02 - <hov19>
+## Overview
+This webpage is Vanessa Ho's custom CV, which was created using various javascript, css, and HTML code. It includes a NavBar, allowing easy access to different sections of the page, such as Work/Experience, Skills, Projects, and Contact section. 
+## Custom Javascript Code
+Description: this feature allows the nav bar to stay fixed at the top of the page, even when the user is scrolling down. This allows for easy access to different sections of the CV page, instead of having the nav bar off the screen and is only useful when at the top of the page. All my code for the custom javascript code is in the stickscroll.js file.
+## Custom Changes to HTML/CSS Code
+Changes were also made to the HTML and css files that were included in the template that I found.
+## References
+- The html document used the following HTML Template from w3schools
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_band&stacked=h
+- The following snippets of javascript code were altered from
