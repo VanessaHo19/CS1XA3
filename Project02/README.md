@@ -17,5 +17,3 @@ https://w3layouts.com/resume-onepage-portfolio-flat-bootstrap-responsive-web-tem
 - The changes made to the HTML file regarding opening files in new tabs required help from [w3schools Link in New Tab](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target)
 - All images were either taken personally, or were given already in the template, with the exception of the [mail icon](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Femail&psig=AOvVaw064jD95-iMFfPzhbvnvmTq&ust=1584402500039000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOjS77TVnegCFQAAAAAdAAAAABBu)
 - Allowing the RESUME button to be linked to a pdf of my formal resume and opening it in a new tab was made possible by taking code from [Create an HTML button that Clicks a link](https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html)
-### Extra Disclaimer:
-Files in this location (within Project02) may be different from within the public_html directory, because there are no subdirectories made in the public_html directory.
