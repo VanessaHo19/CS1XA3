@@ -17,6 +17,7 @@ Description:
 - this feature is displayed in signup.djhtml which is rendered by
 CS1XA3/Project03/login/views.py/
 - it creates a form in /e/hov19/signup/ which allows the user to create a new account.
+
 Exceptions:
 - The code only allows for **TestUser** to login. Any new accounts created will not work.
 ## Objective 02
