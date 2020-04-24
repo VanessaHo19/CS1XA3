@@ -1,12 +1,15 @@
 # CS 1XA3 Project03 - hov19
 ## Usage
-####Install conda enivornment with
+#### Install conda environment with
 > conda activate djangoenv
-####Run locally with
+
+#### Run locally with
 > python manage.py runserver localhost:8000
+
 Get the server to serve you the login page by going to localhost:8000/e/hov19/
-####Run on mac1xa3.ca with
+#### Run on mac1xa3.ca with
 > python manage.py runserver localhost:10043
+
 Get the server to serve you the login page by going to https://mac1xa3.ca/e/hov19/
 Log in with username **TestUser**, and password **1234**
 ## Objective 01
